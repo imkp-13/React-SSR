@@ -14,7 +14,7 @@ root.render(
 
 # Install few dependencies mentioned below
 ```
-express, @babel/register, @babel/preset-env, @babel/preset-react, ignore-styles
+npm install express @babel/register @babel/preset-env @babel/preset-react ignore-styles
 ```
 
 # Create a new folder called server and add two files in it as server.js and index.js
