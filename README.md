@@ -13,13 +13,14 @@ root.render(
 ```
 
 # Install few dependencies mentioned below
-
+```
 express, @babel/register, @babel/preset-env, @babel/preset-react, ignore-styles
+```
 
 # Create a new folder called server and add two files in it as server.js and index.js
 
 # Paste the piece of code in server.js created inside server folder
-
+```
 import express from "express";
 import fs from "fs";
 import path from "path";
@@ -54,9 +55,9 @@ app.use(express.static(path.resolve(__dirname, "..", "build")));
 app.listen(4000, () => {
   console.log("App is launched");
 });
-
+```
 # Paste this piece of code in index.js create inside server folder
-
+```
 require("ignore-styles");
 
 require("@babel/register")({
@@ -65,15 +66,16 @@ require("@babel/register")({
 });
 
 require("./server");
-
+```
 # Add a dependency to run server in package.json
-
+```
 "ssr": "node server/index.js"
-
+```
 # Make build
-
+```
 npm run build
-
+```
 # Run with node to render on server side
-
+```
 npm run ssr
+```
