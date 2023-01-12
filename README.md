@@ -3,13 +3,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # Change in index.js (Paste this piece of code in index.js inside src folder)
-
+```
 const root = ReactDOM.hydrateRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
+```
 
 # Install few dependencies mentioned below
 
